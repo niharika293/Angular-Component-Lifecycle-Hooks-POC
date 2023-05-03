@@ -7,5 +7,6 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
-<app-app-child [color] = "'blue'"></app-app-child>
+<app-app-child [color] = "color"></app-app-child>
+<button (click)="changeColor('green')">Click to change color from parent</button>
 <router-outlet></router-outlet>

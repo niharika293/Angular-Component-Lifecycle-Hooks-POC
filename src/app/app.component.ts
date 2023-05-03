@@ -7,6 +7,7 @@ import { Component, OnChanges, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit, OnChanges {
 
+  color : any = 'blue';
   constructor(){
     // console.log("inside app component constructor, called before ngOnInit");
   }
@@ -17,6 +18,10 @@ export class AppComponent implements OnInit, OnChanges {
 
   ngOnChanges(){
     // console.log("Inside app- component ngOnChanges");
+  }
+
+  changeColor(color : any){
+   this.color = color;
   }
 
   title = 'angular-components-lifecyele-poc';
